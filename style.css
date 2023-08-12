@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    background-image:linear-gradient(100deg,#6b2121,rgb(186, 231, 21));
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 20px;
+    grid-gap:40px;
+
+
+
+
+}
+.card{
+    background-color: #161622d8;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0,18);
+
+}
+.container{
+    position:relative;
+    clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+}
+img{
+    width:100%;
+    display:block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0 ;
+    opacity: 0.7;
+
+
+}
+.card1>.container:after{
+    background-image: linear-gradient(135deg,#3e061a,#bb40b7);
+    }
+    .card2>.container:after{
+    background-image: linear-gradient(135deg,#47092393,#08cad4a4);
+    }
+    .card3>.container:after{
+        background-image: linear-gradient(135deg,#f1520d8f,#7f095c);
+    }
+    
+.details{
+    padding: 20px 10px;
+
+}
+.details{
+    color:#146b71;
+    font-weight: 500;
+    font-size: 18px;
+    margin:10px 0 15px 0;
+
+}
+.details>p{
+    color: #e3e2e2eb;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+    
+    
